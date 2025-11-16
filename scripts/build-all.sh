@@ -21,6 +21,8 @@ for d in dist/*; do
     cp "$d/index.html" "$d/404.html"
   fi
 done
+# faviconを配置
+cp favicon.ico dist/favicon.ico
 
 echo "dist directory contents:"
 ls -al dist

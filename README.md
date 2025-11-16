@@ -23,8 +23,16 @@
 
 ## Deployment (GitHub Pages)
 
-- When you push to the `main` branch, `.github/workflows/deploy.yaml` will automatically publish the contents of `dist/` to GitHub Pages
-- Example public URL: `https://<username>.github.io/<repo-name>/<slide-name>/`
+Push to `main` branch triggers `.github/workflows/deploy.yaml` to publish all built slides in `dist/` to GitHub Pages.
+
+### 公開URL構成
+
+- トップページ: `https://<username>.github.io/<repo-name>/` → ルート `slides.md` の内容
+- サブスライド: `https://<username>.github.io/<repo-name>/<slide-name>/` → `slides/<slide-name>/slides.md` の内容
+
+例:
+- `https://arluqh.github.io/mneme/` → `slides.md`
+- `https://arluqh.github.io/mneme/sample/` → `slides/sample/slides.md`
 
 ## More Info
 

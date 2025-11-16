@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build slides/sample/slides.md --out dist/sample",
-    "build:all": "for d in slides/*; do if [ -f \"$d/slides.md\" ]; then slidev build \"$d/slides.md\" --out dist/$(basename $d); fi; done",
+    "build": "slidev build slides.md --out dist",
+    "build:all": "bash scripts/build-all.sh",
     "dev": "slidev --open",
     "export": "slidev export"
   },

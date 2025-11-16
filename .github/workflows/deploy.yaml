@@ -32,8 +32,13 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        run: nr build:all --base /${{github.event.repository.name}}/
 
+      - name: Verify build output
+        run: |
+          echo "Listing dist directory (if present)" 
+          if [ -d dist ]; then ls -al dist; else echo "dist not found"; fi
+          if [ -d dist/sample ]; then echo "dist/sample exists"; ls -al dist/sample; fi
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

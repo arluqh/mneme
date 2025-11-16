@@ -2,9 +2,11 @@
 # try also 'default' to start simple
 theme: default
 
+favicon: /mneme/favicon.ico
+
 background: 
 # some information about your slides (markdown enabled)
-title: grounding
+title: arluqh/mneme
 info: |
   ## top page
 # apply UnoCSS classes to the current slide
